@@ -1,5 +1,5 @@
 
-(function(exports,require, module, __dirname, __filename){
+// (function(exports,require, module, __dirname, __filename){
 
     const people =['anis', 'ahad', 'jahed'];
     const test= 5;
@@ -7,9 +7,13 @@
         console.log("hello world");
     }
     console.log(module)
-    module.exports= people;
-    return module.exports;
-})
+    module.exports= {
+        people,
+        anis,
+        test
+    };
+    // return module.exports;
+// })
 
 /*
 note:
